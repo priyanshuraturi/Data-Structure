@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class circular_queue{
+public class queue{
 public static Node push(int data){
 Node new_node = new Node();
 new_node.data=data;
