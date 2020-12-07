@@ -33,7 +33,7 @@ front = rear =null;
 int choice=0;
 Scanner kb = new Scanner(System.in);
 System.out.println("--------------------------------------------------------------------------------------------");
-System.out.println("                                  CIRCULAR QUEUE                                            ");
+System.out.println("                                  QUEUE                                            ");
 System.out.println("--------------------------------------------------------------------------------------------");
 while(choice!=-1){
 System.out.println("1.Push \n2.Pop \n3.Print\n -1 Exit");
