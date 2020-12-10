@@ -51,12 +51,14 @@ void print(){
 public static void main(String args[]){
 int choice=0;
 circular_queue cq = new circular_queue();
-Scanner kb = new Scanner(System.in);
 System.out.println("--------------------------------------------------------------------------------------------");
 System.out.println("                                 CIRCULAR QUEUE                                             ");
 System.out.println("--------------------------------------------------------------------------------------------");
+
 while(choice!=-1){
+    try{
 System.out.println("1.Push \n2.Pop \n3.Print\n -1 Exit");
+Scanner kb = new Scanner(System.in);
 choice =kb.nextInt();
 switch(choice){
 case 1:
@@ -73,6 +75,12 @@ case -1:
 break;
 default:
    System.out.println("Wrong Choice");
+}
+
+}
+catch(InputMismatchException ime){
+    System.out.println("Incorrect Input");
+    choice =0;
 }
 }
 }
